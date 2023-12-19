@@ -3,7 +3,7 @@ import { CardProps } from '@/types'
 
 
 export const Card = ({img,type,growth,time,count}:CardProps) => {
-  console.log('Type',type)
+  // console.log('Type',type)
   return (
     <div className='shadow-1 flex gap-2 bg-white border-round-xl p-3'>
     <div className='flex flex-column gap-1'>

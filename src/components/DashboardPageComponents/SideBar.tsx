@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 
 import SidebarBottom from "./SidebarBotom";
 import { routes } from "../../../data/routes";
-import '@/Styles/SideBar.scss'
+import '@/Styles/Sidebar.scss'
 
 
 

@@ -12,7 +12,7 @@ export default function CurvedGraph() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const documentStyle = getComputedStyle(document.documentElement);
+
                 const res = await MicroPaymentApi(); 
                 // console.log(res); 
                 const TimeArray = res?.GraphData.map((item:any) => item.Time)
@@ -25,7 +25,6 @@ export default function CurvedGraph() {
                         {
                             label: 'Micropayments',
                             fill: false,
-                            borderColor: documentStyle.getPropertyValue('--blue-500'),
                             yAxisID: 'y',
                             tension: 0.4,
                             data: UsersArray
@@ -48,6 +47,7 @@ export default function CurvedGraph() {
 
                 setChartData(data);
                 setChartOptions(options);
+              
             } catch (err) {
                 console.log('Error fetching data:', err);
             }
