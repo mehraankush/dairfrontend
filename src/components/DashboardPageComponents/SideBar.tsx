@@ -35,7 +35,7 @@ const SideBar = () => {
                                 ${pathname === item.href ? 'text-white bg-blue-800' : 'text-black-alpha-90'}`}
                             >
                                 <div className={`flex items-center gap-3 md:ml-3`}>
-                                    <Image alt="Icons" width={20} height={20} src={item.icon} 
+                                    <Image alt="Icons" width={20} height={20} src={item.icon} className="sideBarSvg"
                                     />
                                     <p className={`font-medium text-md `}>{item.lable}</p>
                                 </div>

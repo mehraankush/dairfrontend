@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { TopUsers } from './Common/TopUsers'
 import { TopCountry } from './Common/TopCountry'
 import { MapMainSection } from './map/MapMainSection'

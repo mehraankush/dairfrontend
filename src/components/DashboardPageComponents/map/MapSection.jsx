@@ -1,13 +1,14 @@
 "use client"
-// import { VectorMap } from "@react-jvectormap/core";
-// import { worldMill } from "@react-jvectormap/world";
-import React from "react";
+
+import dynamic from 'next/dynamic';
+const VectorMap = dynamic(() => import('@react-jvectormap/core').then((mod) => mod.VectorMap), { ssr: false });
+import { worldMill } from "@react-jvectormap/world";
 import { colorScale, countries } from "./Countries";
 
 function WorldMap() {
   return (
     <div style={{ margin: "auto", width: "300px", height: "300px" }} className="mt-5">
-         {/* <VectorMap
+      <VectorMap
         map={worldMill}
         containerStyle={{
           width: "300px",
@@ -23,7 +24,7 @@ function WorldMap() {
             },
           ],
         }}
-        /> */}
+      />
     </div>
   );
 }
