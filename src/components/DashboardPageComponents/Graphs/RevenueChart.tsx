@@ -11,7 +11,6 @@ export default function RevenueChart() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const documentStyle = getComputedStyle(document.documentElement);
                 const res = await RevenueChartApi();
                 // console.log(res);
                 setTotal(res?.Total)
@@ -24,8 +23,8 @@ export default function RevenueChart() {
                     datasets: [
                         {
                             label: 'Revenue Chart',
-                            backgroundColor: documentStyle.getPropertyValue('--indigo-600'),
-                            borderColor: documentStyle.getPropertyValue('--indigo-600'),
+                            backgroundColor: '#4238ff',
+                            borderColor: '#4238ff',
                             data: RevenueArray
                         }
                     ]

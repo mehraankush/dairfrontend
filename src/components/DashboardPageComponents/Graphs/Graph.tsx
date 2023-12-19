@@ -8,7 +8,6 @@ export default function VerticalBarDemo() {
     const [chartOptions, setChartOptions] = useState({});
     const [total, setTotal] = useState('')
 
-    const documentStyle = getComputedStyle(document.documentElement);
 
     useEffect(() => {
         fetchData();
@@ -27,8 +26,8 @@ export default function VerticalBarDemo() {
                 datasets: [
                     {
                         label: 'Overall Analytics',
-                        backgroundColor: documentStyle.getPropertyValue('--indigo-600'),
-                        borderColor: documentStyle.getPropertyValue('--indigo-600'),
+                        backgroundColor: '#4238ff',
+                        borderColor: '#4238ff',
                         data: usersArray
                     }
                 ]

@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
-import { MonthlySubscriberApi, OverallAnalitics } from '@/services/api';
+import { MonthlySubscriberApi } from '@/services/api';
 import Image from 'next/image';
 
 export default function MonthlySubscriber() {
@@ -9,7 +9,6 @@ export default function MonthlySubscriber() {
     const [chartOptions, setChartOptions] = useState({});
     const [total, setTotal] = useState('100')
 
-    const documentStyle = getComputedStyle(document.documentElement);
 
     useEffect(() => {
         fetchData();
@@ -26,8 +25,8 @@ export default function MonthlySubscriber() {
                 datasets: [
                     {
                         label: 'Monthly Subscriber',
-                        backgroundColor: documentStyle.getPropertyValue('--blue-600'),
-                        borderColor: documentStyle.getPropertyValue('--blue-600'),
+                        backgroundColor:'#2563eb',
+                        borderColor: '#2563eb',
                         data: res?.GraphData
                     }
                 ]

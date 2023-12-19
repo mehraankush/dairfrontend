@@ -9,7 +9,6 @@ export default function YearlySubscriber() {
     const [chartOptions, setChartOptions] = useState({});
     const [total, setTotal] = useState('100')
 
-    const documentStyle = getComputedStyle(document.documentElement);
 
     useEffect(() => {
         fetchData();
@@ -35,8 +34,8 @@ export default function YearlySubscriber() {
                 datasets: [
                     {
                         label: 'Yearly Subscriber',
-                        backgroundColor: documentStyle.getPropertyValue('--surface-500'),
-                        borderColor: documentStyle.getPropertyValue('--surface-500'),
+                        backgroundColor: '#64748b',
+                        borderColor: '#64748b',
                         data: subscribersArray
                     }
                 ]
