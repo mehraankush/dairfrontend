@@ -105,3 +105,11 @@ a {
     color-scheme: dark;
   }
 }
+
+#chart-container {
+  position: relative;
+  height: 30vh;
+  overflow: hidden;
+  border: 2px solid black;
+  width: 10rem;
+}

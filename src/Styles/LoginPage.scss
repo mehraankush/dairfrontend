@@ -1,0 +1,16 @@
+.loginbackground{
+    background: url('/LoginBack.png');
+    background-color: #9763FE;
+}
+
+.loginInput{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
