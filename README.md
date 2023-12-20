@@ -8,6 +8,7 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
   - [Next.js](https://nextjs.org/)
   - [PrimeReact](https://www.primefaces.org/primereact/)
   - [PrimeFlex](https://www.primefaces.org/primeflex/)
+  - [SCSS](https://sass-lang.com/)
 
 - **Backend:**
   - [Node.js](https://nodejs.org/)
@@ -15,13 +16,13 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
 
 - **Database:**
   - [MongoDB](https://www.mongodb.com/)
-  - 
+  
 - **Hosting:**
   - **Frontend:** [Vercel](https://dairfrontend-mehraankush.vercel.app/)
   - **Backend:** [AWS EC2](https://aws.amazon.com/ec2/)
 
 ## Features
-- **Welcome Page**
+- **Welcome Page** Explore various graphical representations of your data for better insights and decision-making.
    ![HomePage](https://github.com/mehraankush/TypeScript/blob/main/dair/home.gif)
   
 - **Graphical Views:** Explore various graphical representations of your data for better insights and decision-making.
