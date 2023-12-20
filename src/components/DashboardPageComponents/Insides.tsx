@@ -1,5 +1,5 @@
 import React from 'react'
-import { Users } from '../../../data/Cards'
+import { Users } from '@/data/Cards'
 import { Card } from './Common/Card'
 
 export const Insides = () => {

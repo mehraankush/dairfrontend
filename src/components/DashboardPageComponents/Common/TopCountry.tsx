@@ -1,6 +1,6 @@
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { TopCountryData } from '../../../../data/Country';
+import { TopCountryData } from '../../../data/Country';
 
 export const TopCountry = () => {
     const columns = [

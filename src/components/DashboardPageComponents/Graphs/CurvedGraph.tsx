@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
-import { MicroPaymentApi } from '@/services/api';
 import Image from 'next/image';
+import { fetchDataMicropayments } from './Functions';
 
 export default function CurvedGraph() {
     const [chartData, setChartData] = useState({});
@@ -10,51 +10,19 @@ export default function CurvedGraph() {
     const [total, setTotal] = useState('100k')
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-
-                const res = await MicroPaymentApi(); 
-                // console.log(res); 
-                const TimeArray = res?.GraphData.map((item:any) => item.Time)
-                const UsersArray = res?.GraphData.map((item:any) => item.User)
-                setTotal(res?.Total)
-
-                const data = {
-                    labels: TimeArray,
-                    datasets: [
-                        {
-                            label: 'Micropayments',
-                            fill: false,
-                            yAxisID: 'y',
-                            tension: 0.4,
-                            data: UsersArray
-                        }
-                    ]
-                };
-
-                const options = {
-                    stacked: false,
-                    maintainAspectRatio: false,
-                    aspectRatio: 0.8,
-                    // plugins: {
-                    //     legend: {
-                    //         labels: {
-                    //             color: textColor
-                    //         }
-                    //     }
-                    // },
-                };
-
-                setChartData(data);
-                setChartOptions(options);
-              
-            } catch (err) {
-                console.log('Error fetching data:', err);
-            }
-        };
-
         fetchData();
     }, []);
+
+    const fetchData = async () => {
+        try {
+            const { data, options, total } = await fetchDataMicropayments();
+            setTotal(total)
+            setChartData(data);
+            setChartOptions(options);
+        } catch (err) {
+            console.log('Error fetching OverallAnalitics data:', err);
+        }
+    };
 
     return (
         <div className='bg-white text-black-alpha-70 p-2'>

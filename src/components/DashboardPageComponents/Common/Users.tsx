@@ -12,7 +12,7 @@ type UserDataProps = {
 export const Users = ({Img,name,description,email}:UserDataProps) => {
   return (
     <div className='flex justify-content-between p-2 px-4 mt-2'>
-              <div className='flex gap-3'>
+              <div className='flex gap-3 mr-4'>
                 <div>
                     <Image alt='user' width={40} height={40} src={Img} className='border-rounded-xl'/>
                 </div>

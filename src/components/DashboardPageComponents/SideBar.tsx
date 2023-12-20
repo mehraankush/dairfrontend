@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation'
 
 import SidebarBottom from "./SidebarBotom";
-import { routes } from "../../../data/routes";
+import { routes } from "../../data/routes";
 import '@/Styles/Sidebar.scss'
 
 

@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
-import { MonthlySubscriberApi } from '@/services/api';
 import Image from 'next/image';
+import { fetchDataMonthlySubscriber } from './Functions';
 
 export default function MonthlySubscriber() {
     const [chartData, setChartData] = useState({});
@@ -16,31 +16,12 @@ export default function MonthlySubscriber() {
 
     const fetchData = async () => {
         try {
-            const res = await MonthlySubscriberApi();
-            // console.log(res?.GraphData)
-            setTotal(res?.Total)
-
-            const data = {
-                labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-                datasets: [
-                    {
-                        label: 'Monthly Subscriber',
-                        backgroundColor:'#2563eb',
-                        borderColor: '#2563eb',
-                        data: res?.GraphData
-                    }
-                ]
-            };
-
-            const options = {
-                maintainAspectRatio: false,
-                aspectRatio: 0.8,
-            };
-
+            const { data, options, total } = await fetchDataMonthlySubscriber();
+            setTotal(total)
             setChartData(data);
             setChartOptions(options);
         } catch (err) {
-            console.log('Error fetching data:', err);
+            console.log('Error fetching OverallAnalitics data:', err);
         }
     };
 

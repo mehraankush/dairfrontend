@@ -10,7 +10,7 @@ export const RecentActivity = () => {
             <p className='font-medium text-sm text-blue-500'>View All</p>
         </div>
 
-        <div className='flex flex-column justify-content-evenly h-full'>
+        <div className='flex flex-column justify-content-evenly h-full p-2'>
             <ReacentActivityDummy/>
             <ReacentActivityDummy/>
             <ReacentActivityDummy/>

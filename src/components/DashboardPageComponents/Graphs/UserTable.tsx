@@ -24,7 +24,7 @@ export default function USerTable() {
     }
 
     return (
-        <div className='bg-white text-black-alpha-70 p-2 flex flex-column justify-content-between gap-3'>
+        <div className='bg-white text-black-alpha-70 p-5 flex flex-column justify-content-between gap-3'>
             <div>
                 <p className='font-semibold text-xl'>Top stories in last 30 days</p>
             </div>

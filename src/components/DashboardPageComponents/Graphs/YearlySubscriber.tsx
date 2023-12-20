@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
-import { YearlySubscriberApi } from '@/services/api';
 import Image from 'next/image';
+import { fetchDataYearlySubscriber } from './Functions';
 
 export default function YearlySubscriber() {
     const [chartData, setChartData] = useState({});
@@ -16,40 +16,12 @@ export default function YearlySubscriber() {
 
     const fetchData = async () => {
         try {
-            const res = await YearlySubscriberApi();
-            // console.log(res?.GraphData)
-            setTotal(res?.Total)
-            const simplifiedGraphData = res?.GraphData.map((entry: any) => ({
-                Year: parseInt(entry.Date.split('-')[2]),
-                Subscribers: entry.Subscribers
-            }));
-
-            const yearsArray = simplifiedGraphData.map((entry: any) => entry.Year);
-            const subscribersArray = simplifiedGraphData.map((entry: any) => entry.Subscribers);
-
-            //   console.log(simplifiedGraphData)
-
-            const data = {
-                labels: yearsArray,
-                datasets: [
-                    {
-                        label: 'Yearly Subscriber',
-                        backgroundColor: '#64748b',
-                        borderColor: '#64748b',
-                        data: subscribersArray
-                    }
-                ]
-            };
-
-            const options = {
-                maintainAspectRatio: false,
-                aspectRatio: 0.8,
-            };
-
+            const { data, options, total } = await fetchDataYearlySubscriber();
+            setTotal(total)
             setChartData(data);
             setChartOptions(options);
         } catch (err) {
-            console.log('Error fetching data:', err);
+            console.log('Error fetching OverallAnalitics data:', err);
         }
     };
 
