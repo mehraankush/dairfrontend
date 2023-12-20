@@ -1,4 +1,5 @@
 "use client"
+
 import { UserLoginSuccess, logOut } from '@/services/auth';
 import axios from 'axios';
 import Image from 'next/image'
@@ -7,14 +8,16 @@ import { useEffect, useState } from 'react';
 const User = () => {
     const [toggle, setToggle] = useState(false);
     const [user, setUser] = useState<any>()
+
     useEffect(() => {
-        getUser
-    }, [])
+        getUser();
+    }, [user])
+
     const getUser = async () => {
         try {
             const { data } = await axios.get(`${UserLoginSuccess}`, { withCredentials: true });
             setUser(data?.user);
-            // console.log(data?.user)
+            console.log("gibrish ", data)
         } catch (err) {
             console.log(err);
         }
