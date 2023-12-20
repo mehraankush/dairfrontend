@@ -11,10 +11,11 @@ const User = () => {
 
     useEffect(() => {
         getUser();
-    }, [user])
+    }, [])
 
     const getUser = async () => {
         try {
+            console.log('Dashboard user called')
             const { data } = await axios.get(`${UserLoginSuccess}`, { withCredentials: true });
             setUser(data?.user);
             console.log("gibrish ", data)
