@@ -17,6 +17,8 @@ const fetchDataRevenue = async () => {
                     backgroundColor: '#4238ff',
                     borderColor: '#4238ff',
                     data: revenueArray,
+                    barPercentage:0.2,
+                    borderRadius:20
                 }
             ]
         };
@@ -69,7 +71,8 @@ const fetchDataAnalytics = async () => {
                     label: 'Overall Analytics',
                     backgroundColor: '#4238ff',
                     borderColor: '#4238ff',
-                    data: usersArray
+                    data: usersArray,
+                    barPercentage:0.4
                 }
             ]
         };
@@ -178,7 +181,8 @@ const fetchDataMonthlySubscriber = async () => {
                         label: 'Monthly Subscriber',
                         backgroundColor:'#2563eb',
                         borderColor: '#2563eb',
-                        data: res?.GraphData
+                        data: res?.GraphData,
+                        barPercentage:0.3
                     }
                 ]
             };
