@@ -52,7 +52,7 @@ const LoginButtons = () => {
 
             <div className='flex flex-column gap-3'>
                 <span className="p-float-label">
-                    <InputText id="email" type='email' value={email} onChange={(e) => setEmail(e.target.value)} className="p-2 bg-transparent border-bottom-3 loginInput" />
+                    <InputText id="email" type='email' value={email} onChange={(e) => setEmail(e.target.value)} className="p-3 border-noround border-bottom-3 loginInput" />
                     <label htmlFor="username" className="text-black">Username</label>
                 </span>
             </div>

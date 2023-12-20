@@ -4,7 +4,7 @@ import LoginMain from '@/components/LoginPageComponents/LoginMain'
 import { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Signin'
+  title: 'Dair-Signin'
 }
 
 const page = () => {
