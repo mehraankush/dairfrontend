@@ -72,7 +72,7 @@ const fetchDataAnalytics = async () => {
                     backgroundColor: '#4238ff',
                     borderColor: '#4238ff',
                     data: usersArray,
-                    barPercentage:0.4
+                    barPercentage:0.4,
                 }
             ]
         };
@@ -126,12 +126,16 @@ const fetchDataMicropayments = async () => {
                     fill: false,
                     yAxisID: 'y',
                     tension: 0.4,
-                    data: UsersArray
+                    data: UsersArray,
+                    hoverBorderColor:'gray'
                 }
             ]
         };
 
         const options = {
+            hover:{
+               mode:'dataset'
+            },
             stacked: false,
             maintainAspectRatio: false,
             aspectRatio: 0.8,
@@ -182,7 +186,8 @@ const fetchDataMonthlySubscriber = async () => {
                         backgroundColor:'#2563eb',
                         borderColor: '#2563eb',
                         data: res?.GraphData,
-                        barPercentage:0.3
+                        barPercentage:0.3,
+                       
                     }
                 ]
             };
@@ -236,12 +241,16 @@ const fetchDataYearlySubscriber = async () => {
                     label: 'Yearly Subscriber',
                     backgroundColor: '#64748b',
                     borderColor: '#64748b',
-                    data: subscribersArray
+                    data: subscribersArray,
+                    hoverBorderColor:'blue'
                 }
             ]
         };
 
         const options = {
+            hover:{
+                mode:"dataset"
+              },
             animations: {
                 tension: {
                   duration: 1000,
