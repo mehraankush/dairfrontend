@@ -21,7 +21,7 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
   - **Backend:** [AWS EC2](https://aws.amazon.com/ec2/)
 
 ## Features
-- **Welcome Page
+- **Welcome Page**
    ![HomePage](https://github.com/mehraankush/TypeScript/blob/main/dair/home.gif)
   
 - **Graphical Views:** Explore various graphical representations of your data for better insights and decision-making.
