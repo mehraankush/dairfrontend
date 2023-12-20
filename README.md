@@ -22,18 +22,18 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
 
 ## Features
 - **Welcome Page
-   [HomePage](https://github.com/mehraankush/TypeScript/blob/main/dair/home.gif)
+   ![HomePage](https://github.com/mehraankush/TypeScript/blob/main/dair/home.gif)
   
 - **Graphical Views:** Explore various graphical representations of your data for better insights and decision-making.
-   [Dashboard](https://github.com/mehraankush/TypeScript/blob/main/dair/Dashboard.gif)
+   ![Dashboard](https://github.com/mehraankush/TypeScript/blob/main/dair/Dashboard.gif)
   
 - **Authentication:**
-   [SignUpMethods](https://github.com/mehraankush/TypeScript/blob/main/dair/loginmethods.png)
+   ![SignUpMethods](https://github.com/mehraankush/TypeScript/blob/main/dair/loginmethods.png)
   
   - **Google:** Sign in with your Google account for a seamless and secure experience.
-     [Google](https://github.com/mehraankush/TypeScript/blob/main/dair/google.png)
+     ![Google](https://github.com/mehraankush/TypeScript/blob/main/dair/google.png)
     
   - **GitHub:** Utilize your GitHub credentials for authentication.
   - **Magic Link:** Receive a magic link for hassle-free and secure sign-ins.
-     [SendingMagicLink](https://github.com/mehraankush/TypeScript/blob/main/dair/magiclink.png)
-     [Mailrecieved](https://github.com/mehraankush/TypeScript/blob/main/dair/Screenshot%202023-12-21%20025134.png)
+     ![SendingMagicLink](https://github.com/mehraankush/TypeScript/blob/main/dair/magiclink.png)
+     ![Mailrecieved](https://github.com/mehraankush/TypeScript/blob/main/dair/Screenshot%202023-12-21%20025134.png)
