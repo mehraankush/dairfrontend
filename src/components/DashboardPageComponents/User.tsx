@@ -1,28 +1,11 @@
 "use client"
 
 import { UserLoginSuccess, logOut } from '@/services/auth';
-import axios from 'axios';
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
 const User = () => {
     const [toggle, setToggle] = useState(false);
-    const [user, setUser] = useState<any>()
-
-    useEffect(() => {
-        getUser();
-    }, [])
-
-    const getUser = async () => {
-        try {
-            console.log('Dashboard user called')
-            const { data } = await axios.get(`${UserLoginSuccess}`, { withCredentials: true });
-            setUser(data?.user);
-            console.log("gibrish ", data)
-        } catch (err) {
-            console.log(err);
-        }
-    };
     return (
         <>
             <div>
@@ -30,14 +13,14 @@ const User = () => {
             </div>
             <div>
                 <p className='text-xs font-medium'>Welcome Back</p>
-                <p className='text-sm font-semibold'>{user?.name}</p>
+                <p className='text-sm font-semibold'>Akshita</p>
             </div>
             <div className='p-1 cursor-pointer' onClick={() => setToggle(!toggle)}>
                 <i className='pi pi-angle-down'></i>
             </div>
-            <div className={`bg-white border-1 mt-5 right-0 mr-5 p-3 border-round-md  ${toggle && user ? 'absolute' : 'hidden'}`}>
+            {/* <div className={`bg-white border-1 mt-5 right-0 mr-5 p-3 border-round-md  ${toggle && user ? 'absolute' : 'hidden'}`}>
                 <p className='text-red-600 cursor-pointer' onClick={logOut}>LogOut</p>
-            </div>
+            </div> */}
         </>
     )
 }
