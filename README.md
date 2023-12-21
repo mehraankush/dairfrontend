@@ -28,7 +28,8 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
 - **Graphical Views:** Explore various graphical representations of your data for better insights and decision-making.
    ![Dashboard](https://github.com/mehraankush/TypeScript/blob/main/dair/Dashboard.gif)
   
-- **Authentication:**
+- ## Authentication:
+   Authentication is done with Passport.js, providing a secure and flexible authentication mechanism for the application.
    ![SignUpMethods](https://github.com/mehraankush/TypeScript/blob/main/dair/loginmethods.png)
   
   - **Google:** Sign in with your Google account for a seamless and secure experience.
