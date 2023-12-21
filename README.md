@@ -13,6 +13,7 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
 - **Backend:**
   - [Node.js](https://nodejs.org/)
   - [Express.js](https://expressjs.com/)
+  - [NodeMailer](https://nodemailer.com/)
 
 - **Database:**
   - [MongoDB Atlas](https://www.mongodb.com/)
