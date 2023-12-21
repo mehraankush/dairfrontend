@@ -20,8 +20,8 @@ const SideBar = () => {
                 <Link href='/'>
                     <div className="flex justify-content-center mt-2">
                         <Image src='/logo.png'
-                            width={130}
-                            height={100}
+                              width={200}
+                              height={130}
                             alt="Dair Logo" />
                     </div>
                 </Link>

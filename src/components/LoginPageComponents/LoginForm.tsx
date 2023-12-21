@@ -33,19 +33,19 @@ const LoginForm = () => {
             <Image
               src="/logo.png"
               alt="Dair Logo"
-              width={180}
-              height={150}
+              width={200}
+              height={130}
               quality={100}
               className="border-2"
             />
           </Link>
           <div className="mt-2">
-            <p className="text-black-alpha-90 ml-2">
+            <p className="text-black-alpha-50 ml-2 font-semibold text-sm">
               Enter your username and password
             </p>
           </div>
         </div>
-        <div className="border-3">
+        <div className="border-3 mt-5">
              <LoginButtons />
         </div>
       </div>

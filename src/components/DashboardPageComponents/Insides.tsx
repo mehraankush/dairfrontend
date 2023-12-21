@@ -2,7 +2,7 @@ import React from 'react'
 import { Users } from '@/data/Cards'
 import { Card } from './Common/Card'
 
-export const Insides = () => {
+const Insides = () => {
   return (
     <div className='flex gap-3 p-2 mt-2 justify-content-between'>
         {
@@ -13,3 +13,4 @@ export const Insides = () => {
     </div>
   )
 }
+export  default Insides

@@ -1,6 +1,6 @@
 import '@/Styles/Dashboard.scss'
 
-export const UserWelcome = () => {
+ const UserWelcome = () => {
 
     return (
         <div className='shadow-1  mt-2 border-round-xl p-3 px-5 bg-white text-black-alpha-70 flex back1 justify-content-between'>
@@ -18,3 +18,4 @@ export const UserWelcome = () => {
         </div>
     )
 }
+export default UserWelcome
