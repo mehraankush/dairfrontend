@@ -15,7 +15,7 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
   - [Express.js](https://expressjs.com/)
 
 - **Database:**
-  - [MongoDB](https://www.mongodb.com/)
+  - [MongoDB Atlas](https://www.mongodb.com/)
   
 - **Hosting:**
   - **Frontend:** [Vercel](https://dairfrontend-mehraankush.vercel.app/)
