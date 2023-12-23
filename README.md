@@ -85,3 +85,14 @@ Welcome to the Dashboard App! This app provides a comprehensive view of various 
 ### 8. Future Interest in PrimeReact:
    - Despite initial challenges, found PrimeReact highly helpful and would love to work with it again.
    - Appreciated the ease of fitting data into existing components.
+
+
+## Setup
+```javascript
+
+NEXT_PUBLIC_API_LINK=https://api.npoint.io/5f754613678cbebe119c
+NEXT_PUBLIC_BACKEND_URL=http://localhost:4000
+
+```
+
+
